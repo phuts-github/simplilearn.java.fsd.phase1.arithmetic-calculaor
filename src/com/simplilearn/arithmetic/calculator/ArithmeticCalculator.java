@@ -11,7 +11,7 @@ public class ArithmeticCalculator {
 		char promptChar = promptString.charAt(0);
 		while (promptChar == 'T') {
 			ClearScreen();
-//			System.out.flush();
+
 			
 	//		Define scanner to accept keyboard input
 			Scanner keyInput = new Scanner(System.in);
@@ -46,7 +46,7 @@ public class ArithmeticCalculator {
 			}else {
 				System.out.println("\nInvalid operator. Valid operator are '+, -, *, /'");
 			}
-			System.out.print("\t\t\nT -> Try again,   Q -> Quit" + "\t:: ");
+			System.out.print("\t\t\nT -> Try again/next,   Q -> Quit" + "\t:: ");
 			promptString = keyInput.next().toUpperCase();
 			promptChar = promptString.charAt(0);
 		}
